@@ -170,7 +170,7 @@ plot(data_weekday$interval,data_weekday$V1,type="l",xlab="interval",ylab="averag
 plot(data_weekend$interval,data_weekend$V1,type="l",xlab="interval",ylab="average steps taken across the weekend")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](https://github.com/Aprilfly/RepData_PeerAssessment1/blob/master/AssignmentFiles/unnamed-chunk-5-1.png)<!-- -->
 
 
 
