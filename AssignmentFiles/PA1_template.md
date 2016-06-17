@@ -26,7 +26,7 @@ steps_num<-ddply(activity1,.(date),function(x)sum(x$steps))
 hist(steps_num$V1,main=paste("Histogram of","the total number of steps taken each day"),xlab="the total number of steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](https://github.com/Aprilfly/RepData_PeerAssessment1/blob/master/AssignmentFiles/unnamed-chunk-2-1.png)<!-- -->
 
 ```r
 ##Obtain the median and mean of the number of steps taken each day 
