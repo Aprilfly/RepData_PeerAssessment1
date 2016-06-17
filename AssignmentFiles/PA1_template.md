@@ -50,7 +50,7 @@ pattern<-ddply(activity1,.(interval),function(x) mean(x$steps))
 plot(pattern,xlab="Time Interval(mins)",ylab="Average Taken Steps",main="The Average Daily Activity Pattern",type="l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](https://github.com/Aprilfly/RepData_PeerAssessment1/blob/master/AssignmentFiles/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 ##the 5-minute interval containing the maximum number of steps
