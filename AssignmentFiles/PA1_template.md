@@ -90,7 +90,7 @@ total_steps<-ddply(activity,.(date), function(x) sum(x$steps))
 hist(total_steps$V1,xlab="the total number of steps taken each day",main="The total number of steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](https://github.com/Aprilfly/RepData_PeerAssessment1/blob/master/AssignmentFiles/unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 allinfo2<-summary(total_steps$V1)
