@@ -1,0 +1,42 @@
+---
+title: "The Data Analysis from activity monitoring devices"
+author: "MinSong"
+date: "2016Äê6ÔÂ16ÈÕ"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+```
+
+## R Markdown
+
+
+```{r}
+install.packages("knitr")
+
+setwd("E:/Cousera-Data Science/Reproducible Research/CourseProject1/repdata-data-activity")
+activity<-read.csv("activity.csv")
+##ignore the missing values in the dataset
+activity1<-activity[!is.na(activity$steps),]
+##total steps of number each day
+steps_num<-ddply(activity1,.(date),function(x)sum(x$steps))
+##The histgram of the total number of steps taken each day
+hist(steps_num$V1,main=paste("Histogram of","the total number of steps taken each day"),xlab="the total number of steps taken each day")
+##Obtain the median and mean of the number of steps taken each day 
+allinfo<-summary(steps_num$V1)
+median_steps<-allinfo["Median"]
+mean_steps<-allinfo["Mean"]
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
